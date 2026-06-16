@@ -9,11 +9,15 @@ import java.util.*;
         {
             arr[i]=sc.nextInt();
 
-        }
+        }/*
         for(int i=0; i<arr.length; i++)
         {
             System.out.println(arr[i]);
-        }
+        }*/
+       int j=0;
+       while(j<arr.length){
+         System.out.println(arr[j]);
+       }
 
     }
 

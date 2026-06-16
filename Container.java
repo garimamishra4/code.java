@@ -10,7 +10,7 @@ public class Container {
         while (leftPointer < rightPointer) {
             int width = rightPointer - leftPointer;
             int containerHeight = Math.min(height[leftPointer], height[rightPointer]);
-            int currentWater = width * containerHeight;
+            int currentWater = width * containerHeight; 
             maxWater = Math.max(maxWater, currentWater);
 
             if (height[leftPointer] < height[rightPointer]) {
