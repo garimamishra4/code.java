@@ -5,7 +5,8 @@ class LongestSubarraySum{
         int len = 0;
         long sum = 0;
         HashMap<Long,Integer> m = new HashMap<>();
-        for(int i=0; i<a.length ;i++){
+        for(int i=0; i<
+        a.length ;i++){
             sum+=a[i];
             if(sum == k) len = i+1;
             long need = sum - k;

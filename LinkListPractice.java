@@ -6,6 +6,7 @@ class Node{
         this.next = null;
     }
 }
+
 class LinkListPractice{
     public static void main(String[] args){
         Node a = new Node(10);
@@ -25,7 +26,8 @@ class LinkListPractice{
         insteratend(head);
         System.out.println(" after insertionatend: ");
         print(head);
-        
+        int m =CountNodes(head);
+        System.out.println("no. of nodes:" + m);
 
     }
     static void print(Node head){
@@ -58,4 +60,14 @@ class LinkListPractice{
         return e;
     }
 
+    public static int CountNodes(Node head){
+        int c =0;
+        while(head!=null){
+            c++;
+            head = head.next;
+        }
+        return c;
+    }
+    
 }
+
