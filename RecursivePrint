@@ -5,8 +5,13 @@ class RecursivePrint{
         {
             System.out.println(n);
             return ; }
+            /*1to n
         prrint(n-1);
+        System.out.println(n); */
+        //n to 1
         System.out.println(n);
+        prrint(n-1);
+
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
